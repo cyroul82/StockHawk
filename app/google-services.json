@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "177991081341",
+    "firebase_url": "https://stockhawk-145906.firebaseio.com",
+    "project_id": "stockhawk-145906",
+    "storage_bucket": "stockhawk-145906.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177991081341:android:143ba334c8f86887",
+        "android_client_info": {
+          "package_name": "com.sam_chordas.android.stockhawk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177991081341-2bmavni90bkvvcp3e6i7ep6bv90dn60q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sam_chordas.android.stockhawk",
+            "certificate_hash": "3559136B1A54147147D02ACBFFA05F39E03A7C0E"
+          }
+        },
+        {
+          "client_id": "177991081341-750on6hmaqd80ef62gqkj1nvdcm4bbv1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sam_chordas.android.stockhawk",
+            "certificate_hash": "887DDC0D605D1F20407338225E213D818529F543"
+          }
+        },
+        {
+          "client_id": "177991081341-vv21fkjub4c5kdm2gp06fp0ge9jib796.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEQXSKZ_wN22sg3DxHbn3FB5gyYU-fLL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177991081341-vv21fkjub4c5kdm2gp06fp0ge9jib796.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

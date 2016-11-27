@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_detail"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_gap"
+                app:cardBackgroundColor="@color/cardview_shadow_start_color"
+                app:cardPreventCornerOverlap="false">
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/default_gap"
+                    android:layout_weight="2"
+                    android:elevation="10dp"
+                    android:paddingEnd="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingStart="@dimen/activity_horizontal_margin"
+                    app:columnCount="2">
+
+                    <TextView
+                        android:id="@+id/textViewStockTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/stock_title"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_columnSpan="2"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:text="Yahoo Inc. YHOO" />
+
+                    <TextView
+                        android:id="@+id/textViewDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/date_content_description"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_columnSpan="2"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1"
+                        tools:text="2016 Nov. 3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/bid"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill"
+                        app:layout_rowWeight="1"
+                        tools:text="Bid Price" />
+
+
+                    <TextView
+                        android:id="@+id/textViewBid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/previous_close"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_gravity="fill"
+                        tools:text="+0.22%" />
+
+                    <android.support.v7.widget.Space
+                        android:layout_height="10dp"
+                        app:layout_columnSpan="2"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/textview_currency"
+                        android:gravity="center_vertical"
+                        android:text="@string/textview_currency"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill"
+                        app:layout_rowWeight="1"
+                        tools:text="Currency" />
+
+                    <TextView
+                        android:id="@+id/textView_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/textview_currency"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_gravity="fill"
+                        tools:text="USD" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/previous_close"
+                        android:gravity="center_vertical"
+                        android:text="@string/previous_close"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill"
+                        app:layout_rowWeight="1"
+                        tools:text="Previous Close" />
+
+                    <TextView
+                        android:id="@+id/textViewPreviousClose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/previous_close"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_gravity="fill"
+                        tools:text="45.25" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/open"
+                        android:gravity="center_vertical"
+                        android:text="@string/open"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill"
+                        app:layout_rowWeight="1"
+                        tools:text="Open" />
+
+
+                    <TextView
+                        android:id="@+id/textViewOpen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/previous_close"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_gravity="fill"
+                        tools:text="45.25" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/days_low_description"
+                        android:gravity="center_vertical"
+                        android:text="@string/days_low_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill"
+                        app:layout_rowWeight="1"
+                        tools:text="Low" />
+
+                    <TextView
+                        android:id="@+id/dayslow"
+                        android:contentDescription="@string/days_low_label"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_gravity="fill"
+                        tools:text="76.52" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="@string/days_high_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_columnWeight="1"
+                        app:layout_gravity="fill"
+                        app:layout_rowWeight="1" />
+
+                    <TextView
+                        android:id="@+id/dayshigh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/days_high_label"
+                        android:gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        app:layout_gravity="fill"
+                        tools:text="80.21" />
+
+                    <android.support.v7.widget.Space
+                        app:layout_columnSpan="2"
+                        app:layout_columnWeight="1"
+                        app:layout_rowWeight="1" />
+
+                </android.support.v7.widget.GridLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/default_gap"
+                app:cardBackgroundColor="@color/cardview_shadow_start_color"
+                app:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical|center_horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/historical_data"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|center_vertical"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="?android:attr/buttonBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/button_10d"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/_10_days"
+                            android:onClick="onClickButtonHistoricalData"
+                            android:text="@string/ten_days"
+                            tools:text="10d" />
+
+                        <Button
+                            android:id="@+id/button_1m"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/_1_month"
+                            android:onClick="onClickButtonHistoricalData"
+                            android:text="@string/_1m"
+                            tools:text="1m" />
+
+                        <Button
+                            android:id="@+id/button_3m"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="onClickButtonHistoricalData"
+                            android:text="@string/_3m"
+                            tools:text="3m" />
+
+                        <Button
+                            android:id="@+id/button_6m"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/_6_months"
+                            android:onClick="onClickButtonHistoricalData"
+                            android:text="@string/_6m"
+                            tools:text="6m" />
+
+                        <Button
+                            android:id="@+id/button_1y"
+                            style="?android:attr/buttonBarButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:contentDescription="@string/one_year_description"
+                            android:onClick="onClickButtonHistoricalData"
+                            android:text="@string/one_year"
+                            tools:text="1y" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minHeight="300dp"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingEnd="@dimen/activity_horizontal_margin"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingStart="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin">
+
+                        <com.db.chart.view.LineChartView
+                            android:id="@+id/linechart"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

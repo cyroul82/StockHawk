@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Stock Hawk</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_change_units">Change Units</string>
+    <string name="symbol_search">Symbol Search</string>
+    <string name="content_test">Search for a Stock Symbol</string>
+    <string name="input_hint">FB</string>
+    <string name="input_prefill"></string>
+    <string name="network_toast">Uh-oh! This app requires an internet connection</string>
+    <string name="one_day">1d</string>
+    <string name="one_year">1y</string>
+    <string name="one_year_description">1 Year</string>
+    <string name="days_low_label">Low</string>
+    <string name="days_high_label">High</string>
+    <string name="year_low">Year Low</string>
+    <string name="year_high">Year High</string>
+    <string name="line_chart_tooltip">Line Chart Tooltip</string>
+
+    <string name="google_app_id" translatable="false">xxxxxxxxxxxxxxxxxxxxxxxxxxxx</string>
+    <string name="days_low_description">Day\'s Low</string>
+    <string name="three_days_description">3 Days</string>
+    <string name="ten_days">10d</string>
+    <string name="textview_currency">Currency</string>
+    <string name="previous_close">Previous Close</string>
+    <string name="open">open</string>
+    <string name="date_content_description">Date</string>
+    <string name="bid">Bid Price</string>
+    <string name="empty_view">Empty View</string>
+    <string name="no_data_to_display">No data to display !</string>
+    <string name="stock_title">Stock Title</string>
+    <string name="_10_days">10 Days</string>
+    <string name="_1_month">1 Month</string>
+    <string name="_1m">1m</string>
+    <string name="_3m">3m</string>
+    <string name="_6_months">6 Months</string>
+    <string name="_6m">6m</string>
+    <string name="historical_data">HISTORICAL DATA</string>
+
+
+</resources>
