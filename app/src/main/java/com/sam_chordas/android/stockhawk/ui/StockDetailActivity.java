@@ -423,7 +423,7 @@ public class StockDetailActivity extends AppCompatActivity implements LoaderMana
                         .setLabelsColor(Color.parseColor("#6a84c3"))
                         .setXAxis(false)
                         .setYAxis(false)
-                        /*.setValueThreshold(mValues[0], mValues[mValues.length-1], new Paint())*/
+                        ///*.setValueThreshold(mValues[0], mValues[mValues.length-1], new Paint())*/
                         .setGrid(ChartView.GridType.FULL, new Paint());
 
 
