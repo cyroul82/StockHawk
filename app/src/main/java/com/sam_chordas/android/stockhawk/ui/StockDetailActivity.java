@@ -418,7 +418,7 @@ public class StockDetailActivity extends AppCompatActivity implements LoaderMana
 
                 // Chart
                 mChart.setBorderSpacing(Tools.fromDpToPx(15))
-                        //.setAxisBorderValues(Math.round(Float.parseFloat(mYearLow)), Math.round(Float.parseFloat(mYearHigh)))
+                        .setAxisBorderValues(Math.round(Float.parseFloat(mYearLow)), Math.round(Float.parseFloat(mYearHigh)))
                         .setYLabels(AxisRenderer.LabelPosition.OUTSIDE)
                         .setLabelsColor(Color.parseColor("#6a84c3"))
                         .setXAxis(false)
